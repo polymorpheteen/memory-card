@@ -1,0 +1,9 @@
+.container-wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
