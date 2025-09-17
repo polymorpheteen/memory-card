@@ -1,7 +1,14 @@
-.container-wrapper {
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cards-container {
     max-width: 60%;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 1.75rem 2rem;
     display: flex;
     justify-content: space-around;
     gap: 40px;
