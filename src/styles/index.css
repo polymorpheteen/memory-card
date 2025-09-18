@@ -1,9 +1,37 @@
-:root {
-  color: #242424;
-  background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
+@font-face {
+  font-family: 'Zpix';
+  src: url('/assets/fonts/zpix.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --text-color: #242424;
+  --background-color: #f7f3d8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Zpix', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

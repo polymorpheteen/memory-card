@@ -10,8 +10,9 @@
 }
 
 .logo-wrapper>h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2.3rem;
+    font-family: var(--header-text);
+    color: #4e3629;
 }
 
 .logo-wrapper>img {

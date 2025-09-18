@@ -49,6 +49,15 @@ export default function Cards() {
     fetchAndBuildCards();
   }, []);
 
+  useEffect(() => {
+    if (currentScore === 12) {
+      setBestScore(currentScore);
+      localStorage.setItem("bestScore", currentScore);
+      setIsModalOpen(true);
+      setClickedIds([]); // reset the clicked Pokémon
+    }
+  }, [currentScore]);
+
   function handleCardClick(id) {
     if (clickedIds.includes(id)) {
       console.log("Game Over! You clicked the same Pokemon twice");
@@ -58,6 +67,11 @@ export default function Cards() {
         localStorage.setItem("bestScore", currentScore);
       }
 
+      setIsModalOpen(true);
+      setClickedIds([]);
+    } else if (currentScore === 12) {
+      setBestScore(currentScore);
+      localStorage.setItem("bestScore", currentScore);
       setIsModalOpen(true);
       setClickedIds([]);
     } else {

@@ -1,5 +1,5 @@
 .pokemon-card {
-    border: 2px solid #242424;
+    border: 2px solid #fa9389;
     border-radius: 15px;
     display: flex;
     width: 200px;
@@ -8,6 +8,7 @@
     align-items: center;
     padding: 0.5rem;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .pokemon-card>img {

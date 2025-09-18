@@ -19,8 +19,16 @@ export default function Modal({ isOpen, onClose, currentScore, bestScore }) {
             />
           </svg>
         </button>
-        <h2 className="modal-title">Game Over!</h2>
-        <h3>You clicked the same Pokemon twice</h3>
+        {currentScore === 12 ? (
+          <h2 className="modal-title">You Win!</h2>
+        ) : (
+          <h2 className="modal-title">Game Over!</h2>
+        )}
+        {currentScore !== 12 && (
+          <h3 className="modal-description">
+            You clicked the same Pokemon twice
+          </h3>
+        )}
         <div className="modal-content">
           <p>Your Score: {currentScore}</p>
           <p>Best Score: {bestScore}</p>

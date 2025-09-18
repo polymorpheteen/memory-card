@@ -1,19 +1,11 @@
-@font-face {
-  font-family: 'Zpix';
-  src: url('/assets/fonts/zpix.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --main-text: 'Zpix', monospace;
+  --header-text: "Jersey 10", sans-serif;
   --text-color: #242424;
 }
 
-#root {
-  max-width: 100vw;
-  max-height: 100vh;
-  margin: 0 auto;
-  font-family: var(--main-text);
-  letter-spacing: 0.1rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
