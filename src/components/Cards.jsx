@@ -8,7 +8,7 @@ export default function Cards() {
   const [clickedIds, setClickedIds] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [bestScore, setBestScore] = useState(
-    parseInt(localStorage.getItem("bestScore"))
+    parseInt(localStorage.getItem("bestScore")) || 0
   );
   const [currentScore, setCurrentScore] = useState(0);
 
