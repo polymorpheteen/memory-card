@@ -1,5 +1,5 @@
 # Memory Card Game
-![Alt text](src/public/assets/image/Screenshot.png)
+![Alt text](public/assets/image/Screenshot.png)
 
 ## Description
 
